@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "onvif-rx-angular": {
+    "onvif-rx-angular-docs": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/onvif-rx-angular",
+            "outputPath": "dist/onvif-rx-angular-docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "onvif-rx-angular:build"
+            "browserTarget": "onvif-rx-angular-docs:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "onvif-rx-angular:build:production"
+              "browserTarget": "onvif-rx-angular-docs:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "onvif-rx-angular:build"
+            "browserTarget": "onvif-rx-angular-docs:build"
           }
         },
         "test": {
@@ -110,15 +110,50 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "onvif-rx-angular:serve"
+            "devServerTarget": "onvif-rx-angular-docs:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "onvif-rx-angular:serve:production"
+              "devServerTarget": "onvif-rx-angular-docs:serve:production"
             }
           }
         }
       }
+    },
+    "onvif-rx-angular": {
+      "projectType": "library",
+      "root": "projects/onvif-rx-angular",
+      "sourceRoot": "projects/onvif-rx-angular/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/onvif-rx-angular/tsconfig.lib.json",
+            "project": "projects/onvif-rx-angular/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/onvif-rx-angular/src/test.ts",
+            "tsConfig": "projects/onvif-rx-angular/tsconfig.spec.json",
+            "karmaConfig": "projects/onvif-rx-angular/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/onvif-rx-angular/tsconfig.lib.json",
+              "projects/onvif-rx-angular/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
-  "defaultProject": "onvif-rx-angular"
+  "defaultProject": "onvif-rx-angular-docs"
 }

@@ -1,0 +1,10 @@
+{
+  "name": "onvif-rx-angular",
+  "version": "0.0.1",
+  "description": "A thin wrapper around onvif-rx to communicate with ONVIF devices and cameras in Angular applications.",
+  "peerDependencies": {
+    "@angular/common": "^8.1.2",
+    "@angular/core": "^8.1.2",
+    "onvif-rx": "^7.1.2"
+  }
+}
