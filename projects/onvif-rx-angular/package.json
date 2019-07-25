@@ -1,6 +1,6 @@
 {
   "name": "onvif-rx-angular",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A thin wrapper around onvif-rx to communicate with ONVIF devices and cameras in Angular applications.",
   "author": "Patrick Michalina <patrickmichalina@mac.com> (https://patrickmichalina.com)",
   "license": "MIT",

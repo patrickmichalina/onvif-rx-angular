@@ -9,10 +9,9 @@
   </a>
 </p>
 
-
 ### Installation
 
-`npm i onvif-rx-angular`
+`npm i onvif-rx-angular onvif-rx stream`
 
 ```js
 import { NgModule } from '@angular/core';
