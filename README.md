@@ -1,5 +1,14 @@
-# onvif-rx-angular
-A thin wrapper around onvif-rx to communicate with ONVIF devices and cameras in Angular applications.
+<h1 align="center" style="border-bottom: none;">onvif-rx-angular</h1>
+<h3 align="center">A thin wrapper around onvif-rx to communicate with ONVIF devices and cameras in Angular applications.</h3>
+<p align="center">
+  <!-- <a href="https://github.com/semantic-release/semantic-release">
+    <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
+  </a> -->
+  <a href="https://www.npmjs.com/package/onvif-rx-angular">
+    <img alt="npm latest version" src="https://img.shields.io/npm/v/onvif-rx-angular/latest.svg">
+  </a>
+</p>
+
 
 ### Installation
 
