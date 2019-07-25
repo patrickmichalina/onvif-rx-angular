@@ -1,6 +1,12 @@
 {
   "name": "onvif-rx-angular-docs",
   "version": "0.0.1",
+  "author": "Patrick Michalina <patrickmichalina@mac.com> (https://patrickmichalina.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrickmichalina/onvif-rx-angular"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

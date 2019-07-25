@@ -57,3 +57,6 @@ export class AppComponent {
     })
 }
 ```
+
+### Important
+- Your device must return CORS headers otherwise browsers will reject the responses. You can either run this in Electron or setup a proxy server that appends response headers.

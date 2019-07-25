@@ -2,6 +2,12 @@
   "name": "onvif-rx-angular",
   "version": "0.0.1",
   "description": "A thin wrapper around onvif-rx to communicate with ONVIF devices and cameras in Angular applications.",
+  "author": "Patrick Michalina <patrickmichalina@mac.com> (https://patrickmichalina.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrickmichalina/onvif-rx-angular"
+  },
   "peerDependencies": {
     "@angular/common": "^8.1.2",
     "@angular/core": "^8.1.2",
