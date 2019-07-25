@@ -1,12 +1,14 @@
 import { TestBed } from '@angular/core/testing';
+import { ONVIFService } from './onvif-rx-angular.service';
+import { ONVIFModule } from './onvif-rx-angular.module';
 
-import { OnvifRxAngularService } from './onvif-rx-angular.service';
-
-describe('OnvifRxAngularService', () => {
-  beforeEach(() => TestBed.configureTestingModule({}));
+describe(ONVIFService.name, () => {
+  beforeEach(() => TestBed.configureTestingModule({
+    imports: [ONVIFModule]
+  }));
 
   it('should be created', () => {
-    const service: OnvifRxAngularService = TestBed.get(OnvifRxAngularService);
+    const service: ONVIFService = TestBed.get(ONVIFService);
     expect(service).toBeTruthy();
   });
 });

@@ -5,6 +5,7 @@
   "peerDependencies": {
     "@angular/common": "^8.1.2",
     "@angular/core": "^8.1.2",
-    "onvif-rx": "^7.1.2"
+    "onvif-rx": "^7.1.2",
+    "stream": "^0.0.2"
   }
 }
